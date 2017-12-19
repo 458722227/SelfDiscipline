@@ -1,0 +1,23 @@
+PODS:
+  - IQKeyboardManager (5.0.6)
+  - MJRefresh (3.1.15.1)
+  - Realm (3.0.2):
+    - Realm/Headers (= 3.0.2)
+  - Realm/Headers (3.0.2)
+  - SVProgressHUD (2.0.4)
+
+DEPENDENCIES:
+  - IQKeyboardManager
+  - MJRefresh (~> 3.1.12)
+  - Realm (~> 3.0.2)
+  - SVProgressHUD (~> 2.0.3)
+
+SPEC CHECKSUMS:
+  IQKeyboardManager: 077b7f691dfa9d69db9cff66f2bed68ebfc02d9b
+  MJRefresh: 5f8552bc25ca8751c010f621c1098dbdaacbccd6
+  Realm: 6f23fd1f178a09342eac21bfa7c2bf4312a7a180
+  SVProgressHUD: bfde85ed6c573ea802b9cb37894ed9b629034f1b
+
+PODFILE CHECKSUM: b3dbfda0e0480304e32214a51bb8be257ed136a3
+
+COCOAPODS: 1.3.1
