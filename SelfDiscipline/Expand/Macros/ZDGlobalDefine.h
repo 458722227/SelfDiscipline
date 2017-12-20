@@ -20,6 +20,13 @@
 #define ZD_TabBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49) //底部tabbar高度
 #define ZD_TopHeight (ZD_StatusBarHeight + ZD_NavBarHeight) //整个导航栏高度
 
-#define ZD_BGCOLOR ZD_HEXCOLOR(0xefefef)
+#define ZD_BG_COLOR ZD_HEXCOLOR(0xefefef)
+
+#define ZD_SKYBLUE_COLOR ZD_HEXCOLOR(0x95dade)
+
+#define ZD_RED_COLOR ZD_HEXCOLOR(0xe64d26)
+
+/** 弱引用 */
+#define WEAKSELF __weak typeof(self) weakSelf = self;
 
 #endif /* ZDGlobalDefine_h */

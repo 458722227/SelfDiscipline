@@ -9,12 +9,23 @@
 #import "ZDAllRecordVC.h"
 #import "ZDAddRecordVC.h"
 #import "ZDActionTVCell.h"
+#import "ZDActionModel.h"
+#import "ZDDataBaseManager.h"
 
 @interface ZDAllRecordVC ()
+
+@property(nonatomic, strong)RLMResults *results;
 
 @end
 
 @implementation ZDAllRecordVC
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    self.results = [[ZDDataBaseManager defaultManager] queryAllActions];
+    [self.tableView reloadData];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -50,12 +61,14 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 4;
+    return self.results.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     ZDActionTVCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ZDActionTVCell" forIndexPath:indexPath];
     cell.selectionStyle = NO;
+    cell.model = self.results[indexPath.row];
+    
     return cell;
 }
 

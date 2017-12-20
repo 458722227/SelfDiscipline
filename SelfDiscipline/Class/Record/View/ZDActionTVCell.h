@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZDActionModel.h"
 
 @interface ZDActionTVCell : UITableViewCell
+
+@property (weak, nonatomic) IBOutlet UILabel *nameLab;
+@property (weak, nonatomic) IBOutlet UILabel *natureLab;
+
+@property(nonatomic, strong)ZDActionModel *model;
 
 @end

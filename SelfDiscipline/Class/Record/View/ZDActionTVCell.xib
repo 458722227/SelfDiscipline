@@ -82,6 +82,10 @@
                     <constraint firstAttribute="trailing" secondItem="sr9-La-tya" secondAttribute="trailing" id="wvO-T3-by4"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLab" destination="Jkb-XP-zJ8" id="eA9-0m-8w3"/>
+                <outlet property="natureLab" destination="h1j-jm-n37" id="08c-eE-wfP"/>
+            </connections>
             <point key="canvasLocation" x="36.5" y="65.5"/>
         </tableViewCell>
     </objects>

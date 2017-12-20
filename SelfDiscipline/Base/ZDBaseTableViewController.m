@@ -24,7 +24,7 @@
     CGRect tableFrame = CGRectMake(0, 0, APP_WIDTH, APP_HEIGHT-ZD_TopHeight);
     
     self.tableView = [[UITableView alloc] initWithFrame:tableFrame style:UITableViewStylePlain];
-    self.tableView.backgroundColor = ZD_BGCOLOR;
+    self.tableView.backgroundColor = ZD_BG_COLOR;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
